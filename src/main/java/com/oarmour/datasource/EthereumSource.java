@@ -10,10 +10,22 @@ public class EthereumSource extends RichSourceFunction<Transaction>  {
     Disposable disposable;
     Web3j web3j;
     Object waitLock;
+    String rpcUrl;
+
+    public EthereumSource() {
+    }
+
+    public EthereumSource(String rpcUrl) {
+        this.rpcUrl = rpcUrl;
+    }
 
     @Override
     public void open(Configuration parameters) throws Exception {
         super.open(parameters);
+        if (this.rpcUrl != null) {
+            web3j = Web3j.build(new HttpService(this.rpcUrl));
+            return;
+        }
         web3j = Web3j.build(new HttpService("https://little-few-paper.quiknode.pro/b5d1d2678912de9078cba3c29d6180a685732418/"));
     }
 
