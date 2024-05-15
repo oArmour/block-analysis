@@ -1,4 +1,4 @@
-package com.oarmour.datasource;
+package com.oarmour.cep;
 
 import io.reactivex.disposables.Disposable;
 import org.junit.Before;
@@ -6,7 +6,7 @@ import org.junit.Test;
 import org.web3j.protocol.Web3j;
 import org.web3j.protocol.http.HttpService;
 
-public class ProviderTest {
+public class RPCProvider {
     Object waitLock;
     Disposable disposable;
     Web3j web3j;

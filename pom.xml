@@ -19,7 +19,7 @@
         <scala.binary.version>2.11</scala.binary.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
-        <testcontainers-java-module-ganache.version>0.0.4</testcontainers-java-module-ganache.version>
+
     </properties>
 
     <dependencies>
@@ -78,12 +78,6 @@
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
             <version>5.8.2</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>io.github.ganchix</groupId>
-            <artifactId>testcontainers-java-module-ganache</artifactId>
-            <version>${testcontainers-java-module-ganache.version}</version>
             <scope>test</scope>
         </dependency>
 

@@ -56,6 +56,8 @@ However, CEP also provide the same feature, and it is more flexible and programm
 
 # Case supported
 
-- [x] 1. Head and End address similar Phishing scam
+- [x] [Head and End address similar Phishing scam](https://medium.com/@slowmist/small-bait-big-fish-unveiling-the-1155-wbtc-phishing-incident-22bf53b6fe60)
+
+    I also write [DUNE query](https://dune.com/queries/3699877/6225347) to detect this case
 
 

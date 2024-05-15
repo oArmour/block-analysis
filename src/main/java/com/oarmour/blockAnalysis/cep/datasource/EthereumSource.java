@@ -1,4 +1,4 @@
-package com.oarmour.datasource;
+package com.oarmour.blockAnalysis.cep.datasource;
 import io.reactivex.disposables.Disposable;
 import org.apache.flink.configuration.Configuration;
 import org.apache.flink.streaming.api.functions.source.RichSourceFunction;
